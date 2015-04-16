@@ -2,6 +2,21 @@
 
   //code here
 
+  function Person (name, age)
+  {
+  	this.name = name;
+  	this.age = age;
+  }
+
+  var p1 = new Person('Christian', '27');
+  var p2 = new Person('Brett', '28');
+
+  Person.prototype.sayName = function () {
+  	alert(this.name);
+  }
+
+  p1.sayName();
+
 
 //Now create three instances of Person with data you make up
 

@@ -11,6 +11,21 @@ var User = function(name, email, pw){
   this.pw = pw;
 }
 
+var users = [];
+
+users.push(new User('Tyler', 'tylermcginnis33@gmail.com', 'iLoveJS'))
+users.push(new User('Cahlan', 'cahlan@devmounta.in', 'iLoveHashtags'))
+users.push(new User('Lenny', 'lenny@theLenster.com', 'iLoveLentilSoup'))
+
+console.log('Tyler\'s information is ' + users[0].name + " and " + users[0].email + " and " + users[0].pw);
+console.log('Lenny\'s information is ' + users[2].name + " and " + users[2].email + " and " + users[0].pw);
+
+users.push(new User('Christian', 'csaunders@jive.com', 'password'))
+
+for (var i = 0; i < users.length; i++)
+{
+  console.log('All my users names are ' + users[i].name);
+}
 //Create an Array called 'users' that will store all our instances of User.
 
   //code here
@@ -20,12 +35,12 @@ var User = function(name, email, pw){
 
   //code here
 
-console.log('Tyler\'s information is ');
+
 //Console.log all of Tylers information
 
   //code here
 
-console.log('Lenny\'s information is ');
+
 //Now console.log all of Lennys information
 
   //code here
@@ -35,7 +50,7 @@ console.log('Lenny\'s information is ');
 
   //code here
 
-console.log('All my users names are ');
+
 //Now loop through your users Array and console.log every users name. 
 
   //code here

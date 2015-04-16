@@ -5,6 +5,39 @@
 
 //Create a User constructor that accepts name, email, password, and totalScore parameters and set them appropriatly
 
+var users = [];
+var questions = [];
+
+function User (name, email, password, totalScore)
+{
+	this.name = name;
+	this.email = email;
+	this.password = password;
+	this.totalScore = totalScore;
+}
+
+function Question (title, answersArray, rightAnswer, difficulty)
+{
+	this.title = title;
+	this.answersArray = answersArray;
+	this.rightAnswer = rightAnswer;
+	this.difficulty = difficulty;
+}
+
+users.push(new User("Christian", "csaunders@jive.com", "asdf", "100"));
+users.push(new User("Kristaphonie", "kristaphonie@jive.com", "asdf", "100"));
+users.push(new User("Brett", "brett@jive.com", "asdf", "100"));
+
+questions.push(new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?', 'true', 'true', 'easypeazy'));
+questions.push(new Question('T/F: JavaScript is just a scripting version of Java', 'true', 'true', 'mediumbedium'));
+questions.push(new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value", 'true', 'true', 'hardyparty'));
+
+for (var i = 0; i < users.length; i++)
+{
+	console.log('My users Array and my questions arrray are ...', users, questions);
+}
+
+
   //code here
 
 
@@ -41,7 +74,7 @@
 
   //code here
 
-console.log('My users Array and my questions arrray are ...');
+
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
 
   //code here
